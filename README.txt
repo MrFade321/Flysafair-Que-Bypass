@@ -1,6 +1,6 @@
 # Bypassing FlySafair's Queue-It Implementation
 
-> **Disclosure:** I reached out to FlySafair on the day of the sale. I am yet to hear back from them.
+**Disclosure:** I reached out to FlySafair on the day of the sale. I am yet to hear back from them.
 
 ---
 
@@ -58,7 +58,7 @@ So the question became: is the Worker applied to every path on the site, or just
 
 Before the sale I downloaded FlySafair's public sitemap — the XML file they publish specifically so search engines can find all their pages. I wrote a small Python scanner that probed each URL in the sitemap and logged the response signature. The goal was simple: find any URL that returns the real site rather than a redirect to the queue.
 
-> 📄 The scanner used for this is available in [`queue_bypass_scanner.py`](./queue_bypass_scanner.py)
+> The scanner used for this is available in [`queue_bypass_scanner.py`](./queue_bypass_scanner.py)
 
 Most pages fell into one of two categories. Some returned the expected `302` to queue-it. Others returned a `200 OK` but with an HTML blob that eventually redirected the browser to the queue client-side — still gated.
 
