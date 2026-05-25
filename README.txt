@@ -1,4 +1,4 @@
-# Bypassing FlySafair's Queue-It Implementation
+## Bypassing FlySafair's Queue-It Implementation
 
 **Disclosure:** I reached out to FlySafair on the day of the sale. I am yet to hear back from them.
 
